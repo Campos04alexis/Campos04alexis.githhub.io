@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8E1;
+    color: #4E4E4E;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    background-color: #333;
+    color: #ffcc00;
+  }
+  
+  .marquee {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+  }
+  
+  .marquee span {
+    padding-right: 20px; /* Espacio entre el texto al reiniciar la animación */
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.burger-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.burger-image {
+    flex: 1;
+    margin-right: 20px;
+    margin: 20px;
+}
+
+.burger-image img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+
+.burger-info {
+    flex: 2;
+}
+
+.burger-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.burger-info p {
+    margin: 20px;
+}
+
+.btn {
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #5D4037;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .comic-details {
+        padding: 20px;
+    }
+
+    .comic-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .comic-image img {
+        width: 100%;
+    }
+
+    .comic-info {
+        flex: none;
+        font-size: 10px;
+    }
+
+    .comic-info h2 {
+        font-size: 10px;
+        font-size: 10px;
+    }
+
+    .comic-info p {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+    }
+}
